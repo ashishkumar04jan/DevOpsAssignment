@@ -46,7 +46,17 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '17.0.10'  # Specify the desired Java version
+          java-version: '17.0.10'
+          distribution: 'adopt'
+          java-package: 'jdk'
+          architecture: 'x64'
+          check-latest: false
+          server-id: 'github'
+          server-username: ${{ github.actor }}
+          server-password: ${{ secrets.GITHUB_TOKEN }}
+          overwrite-settings: true
+          job-status: 'success'
+
           
       - name: Analyze with SonarCloud
 
