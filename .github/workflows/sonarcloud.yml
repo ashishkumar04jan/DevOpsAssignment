@@ -70,5 +70,5 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
-          java-version: '17'  # Specify the desired Java version
+          java-version: '17.0.10'  # Specify the desired Java version
 
