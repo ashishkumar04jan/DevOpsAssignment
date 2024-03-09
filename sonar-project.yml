@@ -1,0 +1,25 @@
+# SonarCloud server settings
+sonar:
+  host:
+    url: "https://sonarcloud.io"
+  organization: "your_organization_key"
+ 
+# Project identification
+projectKey: "your_project_key"
+projectName: "Your Project Name"
+projectVersion: "1.0"
+ 
+# Sources
+sources: ["src"]
+tests: ["test"]
+ 
+# Language
+language: "java"
+ 
+# Encoding of source files
+sourceEncoding: "UTF-8"
+ 
+# Exclude directories
+exclusions:
+  - "**/node_modules/**"
+  - "**/vendor/**"
